@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-gray900 text-gray100;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: 'antialiased';
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+
+.home-main {
+  max-width: calc(100vw - ((100vw - 1152px) / 2));
+  min-height: 656px;
+}
+
+.home-main a {
+  background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+  cursor: pointer;
+}
+
+.image-container {
+  background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+  height: 656px;
+}
+
+.btn-comprar:not(:disabled):hover {
+  background-color: #00b37e;
+}
+
+.btn-comprar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.img-productpage {
+  width: 100%;
+  max-width: 130px;
+  height: 145px;
+  background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+}
