@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto 5- Primeiro Framework: Next.JS </h1>
+<h1 align="center"> Projeto 5- Primeiro Framework: Next.js </h1>
 
 <p align="center" dir="auto">
  Ignite Shop
@@ -24,6 +24,7 @@ Esse projeto foi desenvolvido com:
 - Git e Github
 - ESLint
 - API Stripe
+- Vercel
 
 
 
