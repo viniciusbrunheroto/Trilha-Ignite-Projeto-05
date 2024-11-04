@@ -41,7 +41,7 @@ export default function ProductPage({ productInfo }: { productInfo: Stripe.Produ
   }
 
   return (
-    <main className="grid grid-cols-[1fr_1fr] items-stretch gap-16 mx-auto max-w-6xl">
+    <main className="px-5 xl:px-0 flex flex-col md:grid md:grid-cols-[1fr_1fr] items-stretch gap-16 mx-auto max-w-6xl">
         <div className="w-full max-w-xl image-container rounded-lg p-1 flex items-center justify-center object-cover">
           <Image src={productInfo.images[0]} width={520} height={480} alt=""/>
         </div>
@@ -51,7 +51,7 @@ export default function ProductPage({ productInfo }: { productInfo: Stripe.Produ
 
           <p className="mt-10 text-md leading-6 text-gray-300">{productInfo.description}</p>
 
-          <button disabled={isCreatingCheckoutSession} onClick={handleBuyProduct} className="btn-comprar mt-auto bg-green-500 border-0 text-white rounded-lg cursor-pointer p-5 font-bold text-md">Comprar agora</button>
+          <button disabled={isCreatingCheckoutSession} onClick={handleBuyProduct} className="btn-comprar mt-10 md:mt-auto bg-green-500 border-0 text-white rounded-lg cursor-pointer p-5 font-bold text-md">Comprar agora</button>
         </div>
     </main>
   )}

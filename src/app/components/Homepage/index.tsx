@@ -17,15 +17,31 @@ interface HomeProps {
 
 export function HomePage({ products }: HomeProps) {
   const [sliderRef] = useKeenSlider({
-    slides: {
-      perView: 3,
-      spacing: 48,
+    breakpoints : {
+      '(min-width: 320px)': {
+        slides: {
+          perView: 1,
+          spacing: 48,
+        }
+      },
+      '(min-width: 768px)': {
+        slides: {
+          perView: 2,
+          spacing: 48,
+        }
+      },
+      '(min-width: 1024px)': {
+        slides: {
+          perView: 3,
+          spacing: 48,
+        }
+      }
     }
   });
 
 
   return (
-   <main className="home-main flex w-full ml-auto keen-slider" ref={sliderRef}>
+   <main className="home-main flex w-full ml-auto keen-slider px-5 xl:px-0" ref={sliderRef}>
     {products.map(product => {
       return(
         <Link
